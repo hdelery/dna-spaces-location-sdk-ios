@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="MHh-4s-yUT" kind="relationship" relationship="viewControllers" id="YRw-Rc-wFc"/>
+                        <segue destination="S5h-tB-SO2" kind="relationship" relationship="viewControllers" id="JD1-EL-kUc"/>
+                        <segue destination="fze-us-9Mg" kind="relationship" relationship="viewControllers" id="Wuu-hq-OWc"/>
+                        <segue destination="z3c-qS-mim" kind="relationship" relationship="viewControllers" id="53f-qj-ySU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Location Measurements View Controller-->
+        <scene sceneID="hJp-k6-sd6">
+            <objects>
+                <tableViewController id="MHh-4s-yUT" userLabel="Location Measurements View Controller" customClass="LocationMeasurementsViewController" customModule="DnaExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" id="grG-aj-AbO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="07h-CW-TYF">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DNA Spaces Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6h-pp-9kG">
+                                    <rect key="frame" x="8" y="48" width="359" height="31"/>
+                                    <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="26"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="n6h-pp-9kG" secondAttribute="trailing" constant="8" id="9Vc-23-V2R"/>
+                                <constraint firstItem="n6h-pp-9kG" firstAttribute="top" secondItem="07h-CW-TYF" secondAttribute="top" constant="48" id="UUL-11-v1r"/>
+                                <constraint firstItem="n6h-pp-9kG" firstAttribute="leading" secondItem="07h-CW-TYF" secondAttribute="leading" constant="8" id="c2e-v6-HAu"/>
+                            </constraints>
+                        </view>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="WYl-w8-p4V">
+                            <rect key="frame" x="0.0" y="294.5" width="375" height="300"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FJv-Yu-QMy">
+                                    <rect key="frame" x="16" y="20" width="343" height="170"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <bool key="isElement" value="NO"/>
+                                    </accessibility>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <accessibility key="accessibilityConfiguration" label="Test"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="FJv-Yu-QMy" secondAttribute="bottom" constant="110" id="Cs4-VZ-XBE"/>
+                                <constraint firstItem="FJv-Yu-QMy" firstAttribute="leading" secondItem="WYl-w8-p4V" secondAttribute="leading" constant="16" id="PGb-MA-QNd"/>
+                                <constraint firstItem="FJv-Yu-QMy" firstAttribute="top" secondItem="WYl-w8-p4V" secondAttribute="top" constant="20" id="SXi-Vj-kIr"/>
+                                <constraint firstAttribute="trailing" secondItem="FJv-Yu-QMy" secondAttribute="trailing" constant="16" id="qWj-tD-6Dh"/>
+                            </constraints>
+                        </view>
+                        <sections>
+                            <tableViewSection headerTitle="Measures" id="Ath-OE-z7d">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2zQ-sZ-vB2">
+                                        <rect key="frame" x="0.0" y="205.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2zQ-sZ-vB2" id="de0-VR-OA9">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(X, Y)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIf-FG-Six" userLabel="CMX Current Location">
+                                                    <rect key="frame" x="232" y="11" width="128" height="21"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <bool key="isElement" value="NO"/>
+                                                    </accessibility>
+                                                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DNA Spaces Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ear-7O-Vyj">
+                                                    <rect key="frame" x="24" y="-2" width="148" height="34"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <bool key="isElement" value="NO"/>
+                                                    </accessibility>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="ear-7O-Vyj" secondAttribute="height" multiplier="13:3" id="QNA-W9-fG1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kIf-FG-Six" firstAttribute="top" secondItem="ear-7O-Vyj" secondAttribute="bottom" constant="-21" id="DZ8-ig-oqc"/>
+                                                <constraint firstItem="kIf-FG-Six" firstAttribute="leading" secondItem="ear-7O-Vyj" secondAttribute="trailing" constant="60" id="IiY-pZ-Wh4"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="ear-7O-Vyj" secondAttribute="leading" constant="-8" id="KfB-Vr-w0H"/>
+                                                <constraint firstItem="kIf-FG-Six" firstAttribute="baseline" secondItem="ear-7O-Vyj" secondAttribute="baseline" id="MzS-VF-QNU"/>
+                                                <constraint firstItem="kIf-FG-Six" firstAttribute="top" secondItem="de0-VR-OA9" secondAttribute="topMargin" id="dNa-fI-oiL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="kIf-FG-Six" secondAttribute="trailing" constant="15" id="Qks-qN-Ais"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="WoD-2F-pSs">
+                                        <rect key="frame" x="0.0" y="249.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WoD-2F-pSs" id="Y5r-E2-5Ga">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DNA Spaces Location Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vq7-1X-9uj" userLabel="CMX Location Time">
+                                                    <rect key="frame" x="24" y="11.5" width="148.5" height="20.5"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <bool key="isElement" value="NO"/>
+                                                    </accessibility>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="vq7-1X-9uj" secondAttribute="height" multiplier="152:21" id="J3z-Gr-zGm"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Bpd-Pn-RgI" userLabel="CMX Current Location Time">
+                                                    <rect key="frame" x="180.5" y="11" width="178.5" height="21"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <bool key="isElement" value="NO"/>
+                                                    </accessibility>
+                                                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="leadingMargin" secondItem="vq7-1X-9uj" secondAttribute="leading" constant="-8" id="2Bx-HQ-ahR"/>
+                                                <constraint firstItem="Bpd-Pn-RgI" firstAttribute="firstBaseline" secondItem="vq7-1X-9uj" secondAttribute="firstBaseline" id="7YE-FV-ccX"/>
+                                                <constraint firstItem="Bpd-Pn-RgI" firstAttribute="top" secondItem="vq7-1X-9uj" secondAttribute="bottom" constant="-21" id="GzG-96-T3Y"/>
+                                                <constraint firstItem="Bpd-Pn-RgI" firstAttribute="top" secondItem="Y5r-E2-5Ga" secondAttribute="topMargin" id="Huq-ic-ShY"/>
+                                                <constraint firstItem="Bpd-Pn-RgI" firstAttribute="trailing" secondItem="Y5r-E2-5Ga" secondAttribute="trailingMargin" id="Tdg-g1-ppK"/>
+                                                <constraint firstItem="Bpd-Pn-RgI" firstAttribute="leading" secondItem="vq7-1X-9uj" secondAttribute="trailing" constant="8" symbolic="YES" id="UA8-lb-cV3"/>
+                                                <constraint firstItem="Bpd-Pn-RgI" firstAttribute="baseline" secondItem="vq7-1X-9uj" secondAttribute="baseline" id="o6n-mP-2bj"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="MHh-4s-yUT" id="pqh-6a-bFv"/>
+                            <outlet property="delegate" destination="MHh-4s-yUT" id="WQ9-HN-yWn"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Monitor" image="Monitor Tab Image" id="W4C-9T-MIS"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cmxCurrentLocationLabel" destination="kIf-FG-Six" id="pJ5-qS-9Ln"/>
+                        <outlet property="cmxCurrentLocationTimeLabel" destination="Bpd-Pn-RgI" id="3TZ-Ki-mtv"/>
+                        <outlet property="cmxTextView" destination="FJv-Yu-QMy" id="ZMk-qD-lLo"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LJX-5M-jGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052" y="-1033"/>
+        </scene>
+        <!--Location Map View Controller-->
+        <scene sceneID="LiP-aN-4te">
+            <objects>
+                <viewController id="S5h-tB-SO2" userLabel="Location Map View Controller" customClass="LocationMapViewController" customModule="DnaExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Ey-ra-rih"/>
+                        <viewControllerLayoutGuide type="bottom" id="MK7-4h-P7M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AqN-ii-gWn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ceg-aC-CZa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="613"/>
+                                <connections>
+                                    <outlet property="delegate" destination="S5h-tB-SO2" id="Gwc-HL-zZf"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ceg-aC-CZa" firstAttribute="leading" secondItem="AqN-ii-gWn" secondAttribute="leading" id="Nrj-2I-BdR"/>
+                            <constraint firstItem="Ceg-aC-CZa" firstAttribute="top" secondItem="AqN-ii-gWn" secondAttribute="top" id="Rzc-NW-zJn"/>
+                            <constraint firstAttribute="trailing" secondItem="Ceg-aC-CZa" secondAttribute="trailing" id="dud-YP-ya3"/>
+                            <constraint firstItem="MK7-4h-P7M" firstAttribute="top" secondItem="Ceg-aC-CZa" secondAttribute="bottom" constant="5" id="x4H-FF-gde"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="Map Tab Image" id="Odf-aH-R94">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cmxMapScrollView" destination="Ceg-aC-CZa" id="yID-ZN-lhr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2C0-UP-J2u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052" y="1164"/>
+        </scene>
+        <!--Location Points Of Interest View Controller-->
+        <scene sceneID="GaV-6W-ODb">
+            <objects>
+                <tableViewController id="fze-us-9Mg" userLabel="Location Points Of Interest View Controller" customClass="LocationPointsOfInterestViewController" customModule="DnaExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" id="JO2-f9-g63">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="9Xe-Iw-yIx">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DNA Spaces Points Of Interest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9x-pl-glg" userLabel="CMX Points Of Interest">
+                                    <rect key="frame" x="8" y="48" width="359" height="31"/>
+                                    <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="26"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="g9x-pl-glg" firstAttribute="top" secondItem="9Xe-Iw-yIx" secondAttribute="top" constant="48" id="AbC-9W-kmR"/>
+                                <constraint firstItem="g9x-pl-glg" firstAttribute="leading" secondItem="9Xe-Iw-yIx" secondAttribute="leading" constant="8" id="OqV-E7-jfg"/>
+                                <constraint firstAttribute="trailing" secondItem="g9x-pl-glg" secondAttribute="trailing" constant="8" id="Tme-Nz-kVz"/>
+                            </constraints>
+                        </view>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="9mQ-oq-QWI">
+                            <rect key="frame" x="0.0" y="150" width="375" height="300"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="beu-Bj-fF9">
+                                    <rect key="frame" x="16" y="20" width="343" height="270"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <bool key="isElement" value="NO"/>
+                                    </accessibility>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <accessibility key="accessibilityConfiguration" label="Test"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="beu-Bj-fF9" secondAttribute="bottom" constant="10" id="bmq-Cn-9AN"/>
+                                <constraint firstItem="beu-Bj-fF9" firstAttribute="leading" secondItem="9mQ-oq-QWI" secondAttribute="leading" constant="16" id="kI0-hr-LVt"/>
+                                <constraint firstAttribute="trailing" secondItem="beu-Bj-fF9" secondAttribute="trailing" constant="16" id="nPr-cQ-8ak"/>
+                                <constraint firstItem="beu-Bj-fF9" firstAttribute="top" secondItem="9mQ-oq-QWI" secondAttribute="top" constant="20" id="xXg-qR-9xg"/>
+                            </constraints>
+                        </view>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="fze-us-9Mg" id="GSU-cf-Nlv"/>
+                            <outlet property="delegate" destination="fze-us-9Mg" id="VCS-Q9-Sgy"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="POI" image="POI Tab Image" id="2V9-W3-d3B" userLabel="POI"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cmxTextView" destination="beu-Bj-fF9" id="meb-x1-ebv"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jQQ-1x-e0a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052" y="-297"/>
+        </scene>
+        <!--Location Routing View Controller-->
+        <scene sceneID="Qh1-Rk-fZu">
+            <objects>
+                <tableViewController id="z3c-qS-mim" userLabel="Location Routing View Controller" customClass="LocationRoutingViewController" customModule="DnaExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" id="zlc-1U-QxL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="6K0-on-Exa">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DNA Spaces Routing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOg-rw-IVz" userLabel="CMX Routing">
+                                    <rect key="frame" x="8" y="48" width="359" height="31"/>
+                                    <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="26"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="wOg-rw-IVz" secondAttribute="trailing" constant="8" id="B05-hX-hEC"/>
+                                <constraint firstItem="wOg-rw-IVz" firstAttribute="top" secondItem="6K0-on-Exa" secondAttribute="top" constant="48" id="CcF-MO-tcC"/>
+                                <constraint firstItem="wOg-rw-IVz" firstAttribute="leading" secondItem="6K0-on-Exa" secondAttribute="leading" constant="8" id="o2j-if-5SR"/>
+                            </constraints>
+                        </view>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="Z2D-nf-aDB">
+                            <rect key="frame" x="0.0" y="294.5" width="375" height="300"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Jd-fO-e8k">
+                                    <rect key="frame" x="16" y="20" width="343" height="170"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <bool key="isElement" value="NO"/>
+                                    </accessibility>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <accessibility key="accessibilityConfiguration" label="Test"/>
+                            <constraints>
+                                <constraint firstItem="1Jd-fO-e8k" firstAttribute="top" secondItem="Z2D-nf-aDB" secondAttribute="top" constant="20" id="4Pc-uZ-01j"/>
+                                <constraint firstItem="1Jd-fO-e8k" firstAttribute="leading" secondItem="Z2D-nf-aDB" secondAttribute="leading" constant="16" id="6gF-Jh-3Fs"/>
+                                <constraint firstAttribute="trailing" secondItem="1Jd-fO-e8k" secondAttribute="trailing" constant="16" id="OyK-9i-ib7"/>
+                                <constraint firstAttribute="bottom" secondItem="1Jd-fO-e8k" secondAttribute="bottom" constant="110" id="tyS-Nc-ohI"/>
+                            </constraints>
+                        </view>
+                        <sections>
+                            <tableViewSection headerTitle="Measures" id="Cdi-nA-YBP">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jUQ-jm-9ka">
+                                        <rect key="frame" x="0.0" y="205.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jUQ-jm-9ka" id="bty-D4-YuV">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(X, Y)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCy-kT-KdU" userLabel="CMX Current Location">
+                                                    <rect key="frame" x="232" y="11" width="128" height="21"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <bool key="isElement" value="NO"/>
+                                                    </accessibility>
+                                                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DNA Spaces Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbL-02-HRq">
+                                                    <rect key="frame" x="24" y="-2" width="148" height="34"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <bool key="isElement" value="NO"/>
+                                                    </accessibility>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="PbL-02-HRq" secondAttribute="height" multiplier="13:3" id="Wzd-Rg-vwr"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="yCy-kT-KdU" firstAttribute="top" secondItem="PbL-02-HRq" secondAttribute="bottom" constant="-21" id="9hy-yu-CNU"/>
+                                                <constraint firstItem="yCy-kT-KdU" firstAttribute="top" secondItem="bty-D4-YuV" secondAttribute="topMargin" id="HfU-on-5hJ"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="PbL-02-HRq" secondAttribute="leading" constant="-8" id="KHU-fF-8pN"/>
+                                                <constraint firstItem="yCy-kT-KdU" firstAttribute="baseline" secondItem="PbL-02-HRq" secondAttribute="baseline" id="cIe-3r-1OO"/>
+                                                <constraint firstItem="yCy-kT-KdU" firstAttribute="leading" secondItem="PbL-02-HRq" secondAttribute="trailing" constant="60" id="hJJ-5V-T3E"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="yCy-kT-KdU" secondAttribute="trailing" constant="15" id="Me3-No-U4q"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="wBd-S9-f9C">
+                                        <rect key="frame" x="0.0" y="249.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wBd-S9-f9C" id="Xzc-OL-j7r">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DNA Spacers Location Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apx-XA-5PR" userLabel="CMX Location Time">
+                                                    <rect key="frame" x="24" y="11.5" width="148.5" height="20.5"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <bool key="isElement" value="NO"/>
+                                                    </accessibility>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Apx-XA-5PR" secondAttribute="height" multiplier="152:21" id="DeR-Se-nct"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OnT-vs-cl9" userLabel="CMX Current Location Time">
+                                                    <rect key="frame" x="180.5" y="11" width="178.5" height="21"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <bool key="isElement" value="NO"/>
+                                                    </accessibility>
+                                                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="leadingMargin" secondItem="Apx-XA-5PR" secondAttribute="leading" constant="-8" id="4eP-5j-ZL1"/>
+                                                <constraint firstItem="OnT-vs-cl9" firstAttribute="leading" secondItem="Apx-XA-5PR" secondAttribute="trailing" constant="8" symbolic="YES" id="JAN-Fe-ivR"/>
+                                                <constraint firstItem="OnT-vs-cl9" firstAttribute="trailing" secondItem="Xzc-OL-j7r" secondAttribute="trailingMargin" id="W2z-yd-bU8"/>
+                                                <constraint firstItem="OnT-vs-cl9" firstAttribute="baseline" secondItem="Apx-XA-5PR" secondAttribute="baseline" id="W5x-GL-Vu0"/>
+                                                <constraint firstItem="OnT-vs-cl9" firstAttribute="top" secondItem="Apx-XA-5PR" secondAttribute="bottom" constant="-21" id="dlD-vO-NJw"/>
+                                                <constraint firstItem="OnT-vs-cl9" firstAttribute="top" secondItem="Xzc-OL-j7r" secondAttribute="topMargin" id="dxA-HJ-WLp"/>
+                                                <constraint firstItem="OnT-vs-cl9" firstAttribute="firstBaseline" secondItem="Apx-XA-5PR" secondAttribute="firstBaseline" id="i2C-9m-e8y"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="z3c-qS-mim" id="rP4-1b-W1p"/>
+                            <outlet property="delegate" destination="z3c-qS-mim" id="KV1-bT-vwr"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Routing" image="Routing Tab Image" id="Qqk-c5-n17" userLabel="Routing"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cmxCurrentLocationLabel" destination="yCy-kT-KdU" id="UXc-GT-VHC"/>
+                        <outlet property="cmxCurrentLocationTimeLabel" destination="OnT-vs-cl9" id="BfB-re-R9C"/>
+                        <outlet property="cmxTextView" destination="1Jd-fO-e8k" id="T90-SG-qpD"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rsm-aw-3mR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052" y="438"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Map Tab Image" width="18" height="30"/>
+        <image name="Monitor Tab Image" width="30" height="25"/>
+        <image name="POI Tab Image" width="30" height="30"/>
+        <image name="Routing Tab Image" width="30" height="30"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+Pods/
+Podfile.lock
+DnaLocationSample.xcworkspace/
+**/.DS_Store
+.DS_Store
+xcuserdata
